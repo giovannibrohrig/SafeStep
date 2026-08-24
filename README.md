@@ -1,0 +1,1 @@
+# BengalaInteligente_1SEM_IA
