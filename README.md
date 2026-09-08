@@ -14,7 +14,7 @@ O objetivo final é proporcionar mais autonomia e segurança na mobilidade urban
 
 **Em fase inicial de planejamento.** Ainda estamos definindo:
 
-- [ ] Divisão de tarefas entre os integrantes
+- [x] Divisão de tarefas entre os integrantes
 - [ ] Definição da stack tecnológica (hardware, app mobile, IA)
 - [ ] Arquitetura geral do sistema (bengala ↔ app ↔ IA)
 - [ ] Escopo do MVP
@@ -32,9 +32,14 @@ Este README será atualizado conforme o projeto avançar.
 
 | Nome | Função |
 |------|--------|
-| - | - |
-| - | - |
-| - | - |
+| Davi Tonin | YOLO |
+| Giovanni Rohrig | YOLO |
+| Gustavo Cruz | Lógica |
+| João Paulo | Pareamento |
+| João Pedro | Pareamento |
+| João Vitor | Lógica |
+| Juliano Murbach | Design |
+| Lucas Batalha | Design |
 
 ## 🛠️ Stack (a definir)
 
