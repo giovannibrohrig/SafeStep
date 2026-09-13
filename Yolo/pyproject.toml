@@ -1,0 +1,30 @@
+[project]
+name = "yolo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "4NUB1Ss2", email = "soprasalvarf@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "torch==2.5.1",
+    "torchvision>=0.20.1",
+    "ultralytics>=8.4.148",
+]
+
+[project.scripts]
+yolo = "yolo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+torchvision = { index = "pytorch-cu121" }
