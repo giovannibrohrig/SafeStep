@@ -13,8 +13,7 @@ build/
 datasets/
 dataset/
 *.zip
-runs/**/weights/*
-!runs/detect/train*/weights/best.pt
+runs/
 develop-eggs/
 dist/
 downloads/
