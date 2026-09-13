@@ -10,6 +10,10 @@ __pycache__/
 
 # Diretórios de build e distribuição (se for empacotar o projeto)
 build/
+datasets/
+dataset/
+*.zip
+runs/
 develop-eggs/
 dist/
 downloads/
