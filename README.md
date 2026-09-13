@@ -45,7 +45,7 @@ Este README será atualizado conforme o projeto avançar.
 
 - **Hardware:** —
 - **Aplicativo:** —
-- **IA / Processamento:** —
+- **IA / Processamento:** YOLO - Reconhecimento de Imagens
 - **Comunicação (bengala ↔ app):** —
 
 ## 📄 Licença
