@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="513fffbf-9058-4012-bc81-0eb8c9818326" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/.python-version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/pyproject.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/src/yolo/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/uv.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/yolo26l.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YOLO/yolo26n.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-2/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-2/labels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-3/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-3/labels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-4/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-4/labels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-4/train_batch0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-4/train_batch1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1-4/train_batch2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../runs/detect/SafeStep/train_v1/labels.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +31,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste_gpu.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/giovanni/SafeStep/Yolo&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.detect_images.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.teste_gpu.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/giovanni/SafeStep/Yolo",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/datasets" />
@@ -89,15 +71,27 @@
       <updated>1789164457369</updated>
       <workItem from="1789164581785" duration="3321000" />
       <workItem from="1789167935881" duration="10599000" />
-      <workItem from="1789257450437" duration="1700000" />
+      <workItem from="1789257450437" duration="6064000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Yolo$teste_gpu.coverage" NAME="teste_gpu Coverage Results" MODIFIED="1789169047210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Yolo$detect_images.coverage" NAME="detect_images Coverage Results" MODIFIED="1789773310725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Yolo$main.coverage" NAME="main Coverage Results" MODIFIED="1789257746168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
