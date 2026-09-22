@@ -1,8 +1,10 @@
 from ultralytics import YOLO
+import os
 
 model = YOLO("./Melhores_treinamentos/train_v5/best.pt")
 
-results = model(["image1.jpeg", "image2.jpeg"])
+results = model("./imagens_testes")
+diretorio_destino = "./resultados_teste"
 
 
 for result in results:
@@ -11,5 +13,7 @@ for result in results:
     keypoints = result.keypoints
     probs = result.probs
     obb = result.obb
-    result.show()
-    result.save()
+    #result.show()
+    nome_original = os.path.basename(result.path)
+    caminho_completo = os.path.join(diretorio_destino, nome_original)
+    result.save(filename=caminho_completo)
