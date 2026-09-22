@@ -17,3 +17,6 @@ for result in results:
     nome_original = os.path.basename(result.path)
     caminho_completo = os.path.join(diretorio_destino, nome_original)
     result.save(filename=caminho_completo)
+
+
+os.startfile(os.path.abspath("./resultados_teste"))
