@@ -13,7 +13,7 @@ for result in results:
     keypoints = result.keypoints
     probs = result.probs
     obb = result.obb
-    #result.show()
+    # result.show()
     nome_original = os.path.basename(result.path)
     caminho_completo = os.path.join(diretorio_destino, nome_original)
     result.save(filename=caminho_completo)
