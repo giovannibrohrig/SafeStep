@@ -1,32 +1,98 @@
-#pip install flet
-
 import flet as ft
 
 
+# Função principal do nosso aplicativo
 def main(page: ft.Page):
-    page.title = "SafeStep" #titulo da aplicação
-    page.add(ft.SafeArea(content=ft.Text("Bem-Vindo")))
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER #alinhamento Y
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER #alinhamento X
-    # page.padding = 20
-    # page.theme = ft.ThemeMode.LIGHT #cor do tema
 
-    status_text = ft.Text(value='', color=ft.Colors.RED) #nao sei oq faz ainda
+    # Define o título da janela
+    page.title = "SafeStep"
 
-    campo_email = ft.TextField(
-        label='E-mail',
-        keyboard_type=ft.KeyboardType.EMAIL,
-        prefix_icon=ft.Icons.EMAIL,
-        width=300,
+    # Centraliza o conteúdo verticalmente
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER
+
+    # Centraliza o conteúdo horizontalmente
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
 
+    # Campo para digitar o usuário
+    usuario = ft.TextField(
+        label="Insira o Email ou Telefone",
+        width=300
     )
 
 
-    page.add(
-        ft.Button('Login')
+    # Campo para digitar a senha
+    senha = ft.TextField(
+        label="Insira a Senha",
+        password=True,
+        width=300
     )
 
 
-if __name__ == "__main__":
-    ft.run(main)
+    # Texto que vamos usar para mostrar mensagens
+    mensagem = ft.Text()
+
+
+    # Função executada quando o usuário clicar em "Entrar"
+    def fazer_login(e):
+
+        # Verifica se usuário e senha estão corretos
+        if usuario.value == "admin" and senha.value == "1234":
+
+            # Altera o texto da mensagem
+            mensagem.value = "Login realizado com sucesso!"
+
+        else:
+
+            # Caso estejam errados
+            mensagem.value = "Usuário ou senha incorretos."
+
+        # Atualiza a página
+        page.update()
+
+
+    # Cria o botão de login
+    botao = ft.Button(
+        "Entrar",
+        on_click=fazer_login,
+        width=300
+    )
+
+
+    # Organiza os elementos verticalmente
+    tela_login = ft.Column(
+        [
+            # Título
+            ft.Text(
+                "Login",
+                size=30,
+                weight=ft.FontWeight.BOLD
+            ),
+
+            # Campo de usuário
+            usuario,
+
+            # Campo de senha
+            senha,
+
+            # Botão
+            botao,
+
+            # Mensagem
+            mensagem
+        ],
+
+        # Centraliza os elementos
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+
+        # Espaçamento entre eles
+        spacing=15
+    )
+
+
+    # Coloca a tela de login na página
+    page.add(tela_login)
+
+
+# Inicia o aplicativo
+ft.run(main)
