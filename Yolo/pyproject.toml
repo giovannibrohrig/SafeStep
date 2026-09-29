@@ -8,6 +8,8 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "keyboard>=0.13.5",
+    "pyttsx3>=2.99",
     "torch==2.5.1",
     "torchvision>=0.20.1",
     "ultralytics>=8.4.148",
