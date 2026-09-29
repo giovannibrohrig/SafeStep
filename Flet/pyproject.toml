@@ -1,0 +1,36 @@
+[project]
+name = "safestep-app-flet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Giovanni Bautto Rohrig", email = "giovanni.rohrig@aluno.cps.sp.gov.br" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anyio==4.15.1",
+    "certifi==2026.7.22",
+    "flet==1.0.2",
+    "flet-desktop==1.0.2",
+    "h11==0.16.0",
+    "httpcore==1.0.9",
+    "httpx==0.28.1",
+    "idna==3.20",
+    "markdown-it-py==4.2.0",
+    "mdurl==0.1.2",
+    "msgpack==1.2.3",
+    "oauthlib==4.0.0",
+    "pygments==2.21.0",
+    "repath==0.9.0",
+    "rich==15.0.0",
+    "six==1.17.0",
+    "sqlalchemy==2.1.1",
+    "typing-extensions==4.16.0",
+]
+
+[project.scripts]
+safestep-app-flet = "safestep_app_flet:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
