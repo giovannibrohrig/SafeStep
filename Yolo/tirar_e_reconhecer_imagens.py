@@ -6,6 +6,7 @@ import keyboard
 import sys
 import shutil
 import pyttsx3
+from pynput import keyboard
 
 def tirar_foto():
     pasta_destino="fotos_analise_pendente"
@@ -68,24 +69,27 @@ def analisar_foto():
 
 def app():
     while True:
-        while True:
-            print("Aperte Enter para tirar foto, ou ESPAÇO para sair")
-            event = keyboard.read_event()
-
-            if  event.event_type == keyboard.KEY_DOWN:
-                if event.name == 'enter':
+        print("Aperte ENTER para tirar uma foto, e SPACE para sair")
+        with keyboard.Events() as events:
+            for event in events:
+                if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.enter:
                     break
-                elif event.name == 'space':
+                if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.space:
                     sys.exit()
+
         foto = tirar_foto()
         if foto:
             print("Aperte ENTER para analisar a imagem")
-            keyboard.wait('enter')
+            with keyboard.Events() as events:
+                for event in events:
+                    if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.enter:
+                        break
             labels = analisar_foto()
             labels = ", ".join(labels)
             texto = f"Foram identificados, {labels}, nessa imagem"
             print(texto)
             motor = pyttsx3.init()
+            motor.setProperty('rate', 140)
             motor.say(texto)
             motor.runAndWait()
         else:
@@ -95,7 +99,3 @@ def app():
 
 
 app()
-
-
-
-
