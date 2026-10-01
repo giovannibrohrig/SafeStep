@@ -1,0 +1,19 @@
+[project]
+name = "esp32"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "4NUB1Ss2", email = "soprasalvarf@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pipkin>=2.2b1",
+]
+
+[project.scripts]
+esp32 = "esp32:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"

@@ -7,7 +7,12 @@ import sys
 import shutil
 import pyttsx3
 from pynput import keyboard
+import asyncio
+from detect_BLE import escutar_bengala
+from time import sleep
 
+motor = pyttsx3.init()
+motor.setProperty('rate', 140)
 def tirar_foto():
     pasta_destino="fotos_analise_pendente"
     if not os.path.exists(pasta_destino):
@@ -68,34 +73,28 @@ def analisar_foto():
 
 
 def app():
-    while True:
-        print("Aperte ENTER para tirar uma foto, e SPACE para sair")
-        with keyboard.Events() as events:
-            for event in events:
-                if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.enter:
-                    break
-                if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.space:
-                    sys.exit()
 
-        foto = tirar_foto()
-        if foto:
-            print("Aperte ENTER para analisar a imagem")
-            with keyboard.Events() as events:
-                for event in events:
-                    if isinstance(event, keyboard.Events.Press) and event.key == keyboard.Key.enter:
-                        break
-            labels = analisar_foto()
-            labels = ", ".join(labels)
-            texto = f"Foram identificados, {labels}, nessa imagem"
-            print(texto)
-            motor = pyttsx3.init()
-            motor.setProperty('rate', 140)
-            motor.say(texto)
-            motor.runAndWait()
-        else:
-            print("algo deu errado")
-            break
+    foto = tirar_foto()
+    if foto:
+        labels = analisar_foto()
+        labels = ", ".join(labels)
+        texto = f"Foram identificados, {labels}, nessa imagem"
+        print(texto)
 
+        motor.say(texto)
+        motor.runAndWait()
+    else:
+        print("algo deu errado")
 
+async def iniciar_sistema():
+    print("Iniciando sistema")
 
-app()
+    try:
+        async for ultima_distancia in escutar_bengala():
+            distancia = float(ultima_distancia)
+            if distancia < 10:
+                app()
+    except Exception as e:
+        print(e)
+
+asyncio.run(iniciar_sistema())
