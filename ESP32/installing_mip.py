@@ -41,7 +41,7 @@ def conectar_wifi(ssid, password):
         print("\nFalha por timeout. Verifique o sinal, SSID e a senha.")
 
 # Teste novamente
-conectar_wifi("sopa", "12345678")
+conectar_wifi("FatecRioClaro", "FatecRioClaro")
 
 mip.install("aioble")
 
