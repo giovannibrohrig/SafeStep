@@ -4,12 +4,12 @@
 
 ### Bengala Inteligente para Auxílio à Mobilidade de Pessoas com Deficiência Visual
 
-[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB\&logo=python\&logoColor=white)](https://www.python.org/)
-[![ESP32](https://img.shields.io/badge/Hardware-ESP32-E7352C\&logo=espressif\&logoColor=white)](https://www.espressif.com/)
-[![YOLO](https://img.shields.io/badge/Computer%20Vision-YOLO-00FFFF\&logo=yolo\&logoColor=black)](https://github.com/ultralytics/ultralytics)
-[![Flet](https://img.shields.io/badge/UI-Flet-8B5CF6)](https://flet.dev/)
-[![Bluetooth](https://img.shields.io/badge/Communication-Bluetooth%20LE-0082FC\&logo=bluetooth\&logoColor=white)](https://www.bluetooth.com/)
-[![Status](https://img.shields.io/badge/Status-In%20Development-orange)](https://github.com/giovannibrohrig/SafeStep)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![ESP32](https://img.shields.io/badge/Hardware-ESP32-E7352C?style=for-the-badge\&logo=espressif\&logoColor=white)](https://www.espressif.com/)
+[![YOLO](https://img.shields.io/badge/Computer%20Vision-YOLO-00FFFF?style=for-the-badge\&logo=yolo\&logoColor=white)](https://github.com/ultralytics/ultralytics)
+[![Flet](https://img.shields.io/badge/UI-Flet-8B5CF6?style=for-the-badge)](https://flet.dev/)
+[![Bluetooth](https://img.shields.io/badge/Communication-Bluetooth%20LE-0082FC?style=for-the-badge\&logo=bluetooth\&logoColor=white)](https://www.bluetooth.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)](https://github.com/giovannibrohrig/SafeStep)
 
 **SafeStep** é um projeto de tecnologia assistiva que combina sensores, comunicação sem fio, visão computacional e síntese de voz para auxiliar pessoas com deficiência visual na identificação de obstáculos durante a locomoção.
 
